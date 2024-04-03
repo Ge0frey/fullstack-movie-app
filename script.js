@@ -1,6 +1,11 @@
-const APILINK = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=0cad0ca0d882db073312cec9a3792df9&page=1';
+import dotenv from "dotenv";
+dotenv.config();
+console.log(process.env);
+const apikey = process.env.API_KEY;
+
+const APILINK = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${apikey}&page=1`;
 const IMG_PATH = "https://image.tmdb.org/t/p/w1280";
-const SEARCHAPI = "https://api.themoviedb.org/3/search/movie?&api_key=0cad0ca0d882db073312cec9a3792df9&query=";
+const SEARCHAPI = `https://api.themoviedb.org/3/search/movie?&api_key=${apikey}&query=`;
 
 const main = document.querySelector("#section");
 const form = document.querySelector("#form");
