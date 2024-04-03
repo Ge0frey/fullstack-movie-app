@@ -1,14 +1,16 @@
-* {
-    box-sizing: border-box;
-}
-
 body{
     background-color: #131720;
     font-family: sans-serif;
 }
 
 .topnav {
-    overflow: hidden;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
     background-color: #131720;
     padding: 10px;
 }
@@ -21,6 +23,7 @@ body{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 1.2rem;
+    font-weight: bolder;
     text-transform: uppercase;
 }
 
@@ -50,14 +53,10 @@ input {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    column-gap: 15px;
+    row-gap: 25px;
     justify-content: center;
     object-fit: cover;
-}
-
-.column {
-    float: left;
-    width: 100%;
-    padding:10px;
 }
 
 .card {

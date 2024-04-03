@@ -32,9 +32,8 @@ function returnMovies(url) {
             div_card.appendChild(center);
             div_card.appendChild(title);
             div_column.appendChild(div_card);
-            div_row.appendChild(div_column);
 
-            main.appendChild(div_row);
+            main.appendChild(div_column);
         })
     });
 }
